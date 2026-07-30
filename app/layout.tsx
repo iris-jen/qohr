@@ -35,7 +35,7 @@ export default function RootLayout({ children }: Props) {
 
               <footer className={styles.footer}>
 
-                <Box>
+                <Box className={styles.box_primary}>
                   <Image
                       src="/QOHR_Logo_C.png"
                       alt="logo"

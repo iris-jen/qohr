@@ -35,7 +35,10 @@
 }
 
 .link {
-  color: #abe668;
+  align-content: center;
+  align-self: center;
+
+  color: #ffffff;
 }
 
 .link.active {
@@ -85,12 +88,26 @@
 }
 
 .box_primary {
-  background: #a268e6;
-  color: #abe668;
+   background: #a268e6;
+   color: #ffffff;
+   width: 100%;
+   padding: 4px;
+ }
+
+.box_secondary {
+  background: #686ce6;
   width: 100%;
   padding: 4px;
 }
-
 .box_outside {
-  background: #e668ab;
+  background: #0000;
+}
+
+.box_tittle {
+  background: #686ce6;
+  width: 100%;
+  padding: 4px;
+  align-items: center;
+  align-content: center;
+  display: inline-block;
 }

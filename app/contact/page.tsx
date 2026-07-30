@@ -1,6 +1,7 @@
 import {Container} from "@chakra-ui/react/container";
 import {Stack} from "@chakra-ui/react/stack";
 import {Button, Field, Fieldset, For, Input, NativeSelect, Textarea,} from "@chakra-ui/react"
+import type {Metadata} from "next";
 
 
 export default function ContactPage() {
@@ -61,3 +62,8 @@ export default function ContactPage() {
         </>
     );
 }
+
+export const metadata: Metadata = {
+    title: "QOHR - Contact",
+};
+

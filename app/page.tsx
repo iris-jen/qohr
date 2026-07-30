@@ -7,5 +7,5 @@ export default function IndexPage() {
 }
 
 export const metadata: Metadata = {
-  title: "QOHR",
+  title: "QOHR - Main",
 };
