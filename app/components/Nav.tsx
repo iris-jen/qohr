@@ -41,7 +41,6 @@ export const Nav = () => {
                 Contact 📧
             </Link>
         </Box>
-
     </nav>
   );
 };
