@@ -2,7 +2,6 @@ import type {ReactNode} from "react";
 import {StoreProvider} from "./StoreProvider";
 import {Nav} from "./components/Nav";
 
-
 import "./styles/globals.css";
 import styles from "./styles/layout.module.css";
 import {Provider} from "@/components/ui/provider";
@@ -46,8 +45,6 @@ export default function RootLayout({ children }: Props) {
                   </Text>
                 </Box>
               </footer>
-
-
             </Provider>
           </section>
         </body>

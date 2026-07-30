@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
+
 import {usePathname} from "next/navigation";
 
 import styles from "../styles/layout.module.css";
-import {Box} from "@chakra-ui/react";
+import {Box, Link} from "@chakra-ui/react";
 
 export const Nav = () => {
   const pathname = usePathname();
@@ -16,7 +16,7 @@ export const Nav = () => {
             <Link
                 className={`${styles.link} ${pathname === "/" ? styles.active : ""}`}
                 href="/">
-                Home
+                Home 🏠
             </Link>
         </Box>
 
@@ -27,7 +27,7 @@ export const Nav = () => {
                 }`}
                 href="/wiki"
             >
-                Wiki
+                Wiki 📚
             </Link>
         </Box>
 
@@ -38,20 +38,10 @@ export const Nav = () => {
                 }`}
                 href="/contact"
             >
-                Contact
+                Contact 📧
             </Link>
         </Box>
 
-        <Box className={styles.box_primary}>
-            <Link
-                className={`${styles.link} ${
-                    pathname === "/about" ? styles.active : ""
-                }`}
-                href="/about"
-            >
-                About
-            </Link>
-        </Box>
     </nav>
   );
 };
