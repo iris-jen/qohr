@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Props) {
   return (
 
     <StoreProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning={true}>
         <body>
 
           <section className={styles.container}>
