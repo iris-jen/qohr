@@ -1,15 +1,3 @@
-.container {
-  display: grid;
-  grid-template-areas:
-    "nav"
-    "header"
-    "main"
-    "footer";
-  grid-template-rows: auto auto 1fr 36px;
-  align-items: center;
-  min-height: 100vh;
-}
-
 .logo {
   height: 40vmin;
   pointer-events: none;
@@ -25,15 +13,11 @@
 
 .header,
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
 .footer {
-  grid-area: footer;
-  justify-self: center;
+  padding: 20px;
 }
 
 .nav {
@@ -51,7 +35,7 @@
 }
 
 .link {
-  color: #704cb6;
+  color: #abe668;
 }
 
 .link.active {
@@ -74,4 +58,39 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.primary.color {
+  color: #a268e6;
+}
+
+.color.complementary {
+  color: #abe668;
+}
+
+.color.analogous.a {
+  color: #686ce6
+}
+
+.color.analogous.b {
+  color: #e168e6
+}
+
+.color.triadic.a {
+  color: #e668ab
+}
+
+.color.triadic.b {
+  color: #e6a268
+}
+
+.box_primary {
+  background: #a268e6;
+  color: #abe668;
+  width: 100%;
+  padding: 4px;
+}
+
+.box_outside {
+  background: #e668ab;
 }
