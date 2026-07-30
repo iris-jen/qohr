@@ -16,15 +16,15 @@ export default function RootLayout({ children }: Props) {
   return (
 
     <StoreProvider>
-      <html lang="en" suppressHydrationWarning={true}>
+      <html lang="en" suppressHydrationWarning>
         <body>
 
           <section className={styles.container}>
             <Provider>
-              <Nav />
+
 
               <header className={styles.header}>
-
+                <Nav />
               </header>
 
               <main className={styles.main}>
@@ -32,15 +32,14 @@ export default function RootLayout({ children }: Props) {
               </main>
 
               <footer className={styles.footer}>
-                <image>
+
                   <Image
                       src="/QOHR_Logo_C.png"
-                      className={styles.logo}
                       alt="logo"
                       width={700}
                       height={10}
                   />
-                </image>
+
                 Copyright © QOHR - The Queer Online Health Resource 2026
               </footer>
             </Provider>
